@@ -20,7 +20,7 @@ RUN docker-php-ext-install \
         intl \
         pcntl \
         bcmath \
-        sockets \
+        sockets
 
 ENV COMPOSER_ALLOW_SUPERUSER=1
 
