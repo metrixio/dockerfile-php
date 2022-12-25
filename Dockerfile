@@ -25,8 +25,6 @@ RUN docker-php-ext-install \
 ENV COMPOSER_ALLOW_SUPERUSER=1
 
 RUN curl -s https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin/ --filename=composer
-RUN composer config --no-plugins allow-plugins.spiral/composer-publish-plugin false
-
 
 RUN rm -rf /var/lib/apt/lists/*
 
